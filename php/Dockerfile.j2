@@ -19,10 +19,7 @@ RUN /scripts/provision.sh && rm /scripts/provision.sh
 # Copy file & configure
 COPY etc /tmp/etc/
 
-RUN mkdir -p /etc/freetds && \
-    mv /tmp/etc/freetds.conf /etc/freetds/freetds.conf && \
-    mv /tmp/etc/locales.conf /etc/freetds/locales.conf && \
-    mv /tmp/etc/apache/security.conf /etc/apache2/conf-enabled/security.conf && \
+RUN mv /tmp/etc/apache/security.conf /etc/apache2/conf-enabled/security.conf && \
     mv /tmp/etc/apache/mpm_prefork.conf /etc/apache2/mods-enabled/mpm_prefork.conf && \
     mv /tmp/etc/apache/000-default.conf /etc/apache2/sites-available/000-default.conf && \
     mv /tmp/etc/php/php.ini /usr/local/etc/php/conf.d/php.ini && \

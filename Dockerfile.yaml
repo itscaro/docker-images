@@ -19,16 +19,16 @@ images:
   1.9:
     file: Dockerfile-1.9
     base_image: golang:1.9
-    image: go:1.9
+    image: itscaro/go:1.9
   1.9-alpine:
     file: Dockerfile-1.9-alpine
     base_image: golang:1.9-alpine
-    image: go:1.9-alpine
+    image: itscaro/go:1.9-alpine
   1.10:
     file: Dockerfile-1.10
     base_image: golang:1.10
-    image: go:1.10
+    image: itscaro/go:1.10
   1.10-alpine:
     file: Dockerfile-1.10-alpine
     base_image: golang:1.10-alpine
-    image: go:1.10-alpine
+    image: itscaro/go:1.10-alpine
