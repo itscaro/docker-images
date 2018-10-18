@@ -35,7 +35,7 @@ wget https://packagecloud.io/github/git-lfs/packages/debian/${OS_CODENAME}/git-l
     && rm git-lfs.deb
 
 /scripts/install_php_extension.sh --cleanup \
-    amqp apcu bcmath gettext intl mcrypt opcache \
+    amqp apcu bcmath gd gettext intl mcrypt opcache \
     pdo_dblib pdo_sqlite pdo_pgsql pgsql \
     redis mongodb memcached imagick \
     shmop sockets sysvmsg sysvsem sysvshm wddx xml xsl zip ldap \
